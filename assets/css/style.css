@@ -1,33 +1,42 @@
-.highscores {
-  float: left;
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.timer {
-  float: right;
-  font-size: 28px;
+nav {
+    background-color: rgb(19, 111, 216);
+    height: 50px;
+    
 }
 
-.coding-quiz {
+nav a {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 15px 15px 0 0; 
+    margin: 5px 15px 0px 15px;
+}
+
+nav #timerNav {
+    float: right;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 3rem;
     text-align: center;
-    margin: auto;
+    line-height: 1.8rem;
 }
 
-.coding-quiz h1 {
-    font-size: 50px;
-}
-
-.coding-quiz p {
-    font-size: 28px;
-}
-
-.btn {
-    outline: none;
-    border: none;
-    display: inline-block;
+.button {
+    font-size: 18px;
+    margin-top: 15px;
     padding: 10px 15px;
-    background: rgb(58, 58, 143);
-    font-size: 2.2rem;
-    border-radius: 12px;
-    position: relative;
-    top: -3px;
+    background-color: rgb(19, 111, 216);
+    color: white;
+    border-radius: 10px;
 }

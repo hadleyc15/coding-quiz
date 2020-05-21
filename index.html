@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascript Quiz Time!</title>
+    <!-- Page stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    <header>
-        <div class="row">
-            <div class="highscore">View Highscores!</div>
-        </div>
-        <div class="timer">Time: 0</div>
-    </header>
-
-    <main class="coding-quiz">
-        <h1>Coding Quiz!</h1>
-        <p>
-            Welcome to my Coding Quiz! As you answer questions, your score will increase. However, if you get one wrong...10 seconds will be deducted from your timer, so be caredul! Good luck!
+    <nav>
+        <a id="highScoresNav">View Highscores</a>
+        <a id="timerNav">Time: 0</a>
+    </nav>
+    <div class="container">
+        <h2 id="homeTitle">Coding Quiz!</h2>
+        <p id="homeText">
+            Welcome to my Coding Quiz! As you answer questions, your score will increase. However, if you get one
+            wrong...10 seconds will be deducted from your timer, so be caredul! Good luck!
         </p>
-        <button class="btn" id="start-quiz" type="submit">Start!</button>
-    </main>
-
-    <link rel="javascript" href="./assets/js/script.js" />
+        <button class="button" id="start">Start!</button>
+    </div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
