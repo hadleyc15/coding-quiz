@@ -1,0 +1,33 @@
+.highscores {
+  float: left;
+}
+
+.timer {
+  float: right;
+  font-size: 28px;
+}
+
+.coding-quiz {
+    text-align: center;
+    margin: auto;
+}
+
+.coding-quiz h1 {
+    font-size: 50px;
+}
+
+.coding-quiz p {
+    font-size: 28px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(58, 58, 143);
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+}
