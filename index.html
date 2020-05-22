@@ -13,51 +13,52 @@
 <body>
     <!-- Highscores button and timer -->
     <div id="controls">
-        <div id="info">
-          <button id="scores" href="">View High Scores</button>
-          <div id="timer"><p>Time: <span id="time">0</span></p></div>
-        </div>
+            <button id="scores" href="">View High Scores</button>
+            <div id="timer">
+                <p>Time: <span id="time">0</span></p>
+            </div>
     </div>
     <!-- Main body content -->
     <div id="quizBody">
         <section id="intro">
-          <h1>Coding Quiz!</h1>
-          <p>Welcome to my Coding Quiz! It is time to test your knowledge of coding. The test will end when you run out
-            of questions or the timer runs out, whichever happens first!
-            Good luck! Make sure to save your score to the highscores at the end!
-        </p>
-          <button>Start!</button>
-      
+            <h1>Coding Quiz!</h1>
+            <p>Welcome to my Coding Quiz! It is time to test your knowledge of coding. The test will end when you run
+                out
+                of questions or the timer runs out, whichever happens first!
+                Good luck! Make sure to save your score to the highscores at the end!
+            </p>
+            <button>Start!</button>
+
         </section>
-      <!-- Four quiz buttons -->
+        <!-- Four quiz buttons -->
         <section id="quizHolder" class="hide">
-          <p id="title"></p>
+            <p id="title"></p>
             <button></button>
             <button></button>
             <button></button>
             <button></button>
-          <div id="scoreAlert" class="invisible">
-            <p>&nbsp;</p>
-          </div>
+            <div id="scoreAlert" class="invisible">
+                <p>&nbsp;</p>
+            </div>
         </section>
         <!-- Shown at end of quiz -->
         <section id="finish" class="hide">
-          <h2>Quiz Complete!</h2>
-          <p>Your final score is&nbsp;<span id="score"></span></p>
-          <div id="records">
-            <p> Please enter your initials: </p><input id="initials" type="text"> <button>Submit</button>
-          </div>
-          <div id="errorAlert" class="invisible">
-            <p>&nbsp;</p>
-          </div>
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is&nbsp;<span id="score"></span></p>
+            <div id="records">
+                <p> Please enter your initials: </p><input id="initials" type="text"> <button>Submit</button>
+            </div>
+            <div id="errorAlert" class="invisible">
+                <p>&nbsp;</p>
+            </div>
         </section>
-      <!-- Highscores page revealed after clicking high scores button -->
+        <!-- Highscores page revealed after clicking high scores button -->
         <section id="highScores" class="hide">
-          <h1>High Scores</h1>
-          <div>
-      
-          </div>
-          <button id="reset">Go Back</button> <button id="clearScores">Clear High Scores</button>
+            <h1>High Scores</h1>
+            <div>
+
+            </div>
+            <button id="reset">Go Back</button> <button id="clearScores">Clear High Scores</button>
         </section>
     </div>
     <!-- Link to Javascript file -->
