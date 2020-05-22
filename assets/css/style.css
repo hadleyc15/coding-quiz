@@ -1,46 +1,124 @@
-body {
+:root {
+    --primary-color: rgb(16, 86, 214);
+    --secondary-color: rgb(172, 11, 11);
+}
+
+html,body{
+    font-family: 'Arial';
+    height:100%;
+}
+  
+#highScores div div{
+    padding: 5px;
+    font-weight:600;
+}
+  
+#highScores button{
+    margin:5px 0;
+}
+
+#quizBody{
+    display: flex;
+    flex-direction: column;
+}
+  
+section{
+    max-width: 50%;
+    margin: auto;
+}
+  
+#info{
+    max-width:980px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-nav {
-    background-color: rgb(19, 111, 216);
-    height: 50px;
-    
-}
-
-nav a {
-    float: left;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    padding: 16px;
-    border-radius: 15px 15px 0 0; 
-    margin: 5px 15px 0px 15px;
-}
-
-nav #timerNav {
-    float: right;
-}
-
-.container {
-    width: 500px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    text-align: center;
-    line-height: 1.8rem;
-}
-
-.container h1 {
-    text-decoration: underline;
-}
-/* styling for the main button */
-.button {
-    font-size: 18px;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: rgb(19, 111, 216);
     color: white;
-    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 30px;
+    background-color:rgb(129, 208, 235);
 }
+  
+#scores{
+    left:40px;
+    background-color: var(--primary-color);
+    color: white;
+}
+  
+#timer{
+    right:40px;
+    color: black;
+    font-weight: bold;
+}
+  
+#intro{
+    text-align:center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+button{
+    background-color: var(--primary-color);
+    color:white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+  
+button:hover{
+    background-color: var(--secondary-color);
+}
+  
+#quizHolder #title{
+    font-size: 40px;
+}
+  
+#quizHolder button{
+    background-color: var(--primary-color);
+    border-radius:10px;
+    color:white;
+    margin: 3px;
+    padding: 10px 15px;
+    cursor:pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+  
+#quizHolder button:hover{
+    background-color: var(--secondary-color);
+}
+  
+#scoreAlert, #errorAlert{
+    border-top: 1px solid black;
+    color: green;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight:700;
+    margin: 10px auto;
+}
+  
+#scoreAlert p, #errorIndicator p{
+    margin:0;
+    margin-top:10px;
+}
+  
+#records input, #records button{
+    margin-top:5px;
+}
+  
+.hide{
+    display:none;
+}
+  
+.invisible{
+    visibility:hidden;
+}
+
+.disable{
+  pointer-events:none;
+}
+
