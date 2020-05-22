@@ -52,7 +52,7 @@ var questions = [
 var pageContentEl = function(element) {
 	return document.querySelector(element);
 };
-
+//Function for timer, quiz continues if time is > 0.
 var myTimer = function() {
 	if (time > 0) {
 		time = time - 1;
@@ -62,4 +62,42 @@ var myTimer = function() {
 		pageContentEl('#score').innerHTML = score;
 		onlyDisplaySection("#finish");
 	}
+};
+//function so that only the things i want displayed are visible during the quiz
+var onlyDisplaySection = function(element) {
+	let sections = document.querySelectorAll("section");
+	Array.from(sections).forEach(function(userItem) {
+		userItem.classList.add('hide');
+	});
+	pageContentEl(element).classList.remove('hide');
+};
+//Function for the answer alert to be visible upon answering
+var quizUpdate = function(answerCopy) {
+	pageContentEl('#scoreAlert p').innerHTML = answerCopy;
+	pageContentEl('#scoreAlert').classList.remove('invisible', scoreAlert());
+	Array.from(answers).forEach(answer =>
+	{
+		answer.classList.add('disable');
+    });
+
+var quizUpdate = function(answerCopy) {
+    pageContentEl('#scoreAlert p').innerHTML = answerCopy;
+    pageContentEl('#scoreAlert').classList.remove('invisible', scoreAlert());
+    Array.from(answers).forEach(answer =>
+    {
+        answer.classList.add('disable');
+    });
+//checks to see timer, if more time, moves on to next question
+    setTimeout(function() {
+        if (quizCount === questions.length) {
+            onlyDisplaySection("#finish");
+            time = 0;
+            pageContentEl('#time').innerHTML = time;
+        } else {
+            setQuestionData();
+            Array.from(answers).forEach(answer => {
+                answer.classList.remove('disable');
+            });
+        }
+    }, 1000);
 };
