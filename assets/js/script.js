@@ -173,19 +173,16 @@ var scoreTimeAdjust = function () {
 		quizUpdate("Incorrect");
 	}
 };
-
-
+//This variable sets the highscores in order when viewed, also numbers them 1-however many there are.
 var recordsReset = function () {
 	pageContentEl('#highScores div').innerHTML = "";
-	let i = 1;
 	recordsArray.sort((a, b) => b.score - a.score);
-	Array.from(recordsArray).forEach(check => {
+	recordsArray.forEach(function (check, index) {
 		var scores = document.createElement("div");
-		scores.innerHTML = i + ". " + check.initialRecord + " - " + check.score;
+		var printIndex = index + 1;
+		scores.innerHTML = printIndex + ". " + check.initialRecord + " - " + check.score;
 		pageContentEl('#highScores div').appendChild(scores);
-		i = i + 1;
 	});
-	i = 0;
 	Array.from(answers).forEach(answer => {
 		answer.classList.remove('disable');
 	});
