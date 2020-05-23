@@ -33,3 +33,7 @@ On the highscores view, you may see all of the logged high scores as well as res
 
 https://github.com/hadleyc15/coding-quiz/issues/5#issue-623757313
 https://github.com/hadleyc15/coding-quiz/issues/6#issue-623757342
+
+Depolyed URL:
+
+Github Repo:
