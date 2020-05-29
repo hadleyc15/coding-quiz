@@ -18,7 +18,7 @@ The Javascript was a whole other beast.  Javascript is not something I understan
 
 Upon deployment, you are met with what I will call the home screen.  It has a button to view previously stored highscores, some information about the test, and a button to start the quiz.
 
-https://github.com/hadleyc15/coding-quiz/issues/1#issue-623757098
+<img src = ".assets/images/Screenshot(13)"/>
 
 Once you begin the quiz, you run through a series of questions.  Every time you answer a question, correct or incorrect will appear below the answers to let you know if you got it correct or not.
 
