@@ -22,17 +22,17 @@ Upon deployment, you are met with what I will call the home screen.  It has a bu
 
 Once you begin the quiz, you run through a series of questions.  Every time you answer a question, correct or incorrect will appear below the answers to let you know if you got it correct or not.
 
-<img src=""/>
-<img src=""/>
+<img src="./assets/images/Screenshot%20(14).png"/>
+<img src="./assets/images/Screenshot%20(15).png"/>
 
 After you go through the questions, or the time runs out, the quiz ends.  Upon completion you will be shown your score and be asked high to enter your initials for the highscore list.  After entering, you may view the highscores or restart the entire quiz from the beginning.
 
-<img src=""/>
+<img src="./assets/images/Screenshot%20(17).png"/>
 
 On the highscores view, you may see all of the logged high scores as well as reset the list.
 
-<img src=""/>
-<img src=""/>
+<img src="./assets/images/Screenshot%20(19).png"/>
+<img src="./assets/images/Screenshot%20(20).png"/>
 
 Depolyed URL: https://hadleyc15.github.io/coding-quiz/
 
